@@ -34,9 +34,9 @@
 ```
 
 
-### DX query to DatasetExport Id, DatasetExportPart Id, Access Token
+### DX query to get DatasetExport Id, DatasetExportPart Id, Access Token
 
-```
+``
 $ sfdx force:data:soql:query -u mohan.chinnappan.n_ea2@gmail.com -q " SELECT CreatedById,CreatedDate,Id,LastModifiedById,LastModifiedDate,Owner,Status FROM DatasetExport"
 CREATEDBYID         CREATEDDATE                   ID                  LASTMODIFIEDBYID    LASTMODIFIEDDATE              OWNER               STATUS
 ──────────────────  ────────────────────────────  ──────────────────  ──────────────────  ────────────────────────────  ──────────────────  ─────────
