@@ -11,4 +11,4 @@
 
 - Edit the SAQL as shown below:
 
-![more than 100](/img/du-export-2kplus.png)
+![more than 100](img/du-export-2kplus.png)
