@@ -1,5 +1,22 @@
 ## How to load a csv file into a dataset
 
+
+### Sample data file
+
+```
+$ cat data/fruits.csv
+
+fruit,date,qty
+apple,01/01/2020,30
+mango,01/05/2020,78
+jackfruit,02/20/2020,70
+peach,03/11/2020,2222
+apple,01/07/2019,130
+mango,01/09/2019,278
+jackfruit,02/11/2019,270
+peach,03/09/2019,266
+```
+
 ### Commmand
 ```bash
 java -jar datasetutils-48.1.0.jar --server false --action load --u $un --p $pw$st --inputFile data/fruits.csv --dataset myfruits
