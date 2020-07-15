@@ -89,7 +89,8 @@ $ curl -X GET    https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v
 ## Notes - Future work
 - All these DX separate operations will be made available by this command in future
 
-``` sfdx mohanc:ea:dataset:export -e  0Px3h0000004D6ECAU
+``` 
+sfdx mohanc:ea:dataset:export -e  0Px3h0000004D6ECAU
 
 ```
 - Above command will emit the csv files part by part
