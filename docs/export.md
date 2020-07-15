@@ -7,7 +7,7 @@
 ![ps-2](img/export-user-ps-2.png)
 
 
-### Export via sfdcDigest Dataflow
+### Export via edgeMart  Dataflow
 ``` json 
 
 {
