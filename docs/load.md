@@ -2,8 +2,8 @@
 
 ### Commmand
 ```bash
+java -jar datasetutils-48.1.0.jar --server false --action load --u $un --p $pw$st --inputFile data/fruits.csv --dataset myfruits
 
-https://github.com/mohan-chinnappan-n/Analytics-Cloud-Dataset-Utils.git
 ```
 
 ### Console log for loading a csv file fruits.csv into dataset myfruits
