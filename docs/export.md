@@ -11,32 +11,25 @@
 ``` json 
 
 {
-  "digestOppty": {
-    "action": "sfdcDigest",
+
+  "getMyCustomer": {
+    "action": "edgemart",
     "parameters": {
-      "fields": [
-        {
-          "name": "Amount"
-        },
-        {
-          "name": "AccountId"
-        },
-        {
-          "name": "Description"
-        }
-      ],
-      "object": "Opportunity"
+      "alias": "mycustomers"
     }
   },
-  "exportOppty": {
+
+
+  "exportMyCustomers": {
     "action": "export",
     "parameters": {
-      "target": "EinsteinDiscovery",
+      "source": "getMyCustomer",
       "userId": "0053h000002xQ5sAAE",
-      "source": "digestOppty"
+      "target": "EinsteinDiscovery"
     }
   }
 }
+
 
 ```
 
