@@ -7,7 +7,7 @@
 ![ps-2](img/export-user-ps-2.png)
 
 
-### Export via sfdcDigest
+### Export via sfdcDigest Dataflow
 ``` json 
 
 {
@@ -41,7 +41,7 @@
 ```
 
 
-### DX query
+### DX query to DatasetExport Id, DatasetExportPart Id, Access Token
 
 ```
 $ sfdx force:data:soql:query -u mohan.chinnappan.n_ea2@gmail.com -q " SELECT CreatedById,CreatedDate,Id,LastModifiedById,LastModifiedDate,Owner,Status FROM DatasetExport"
@@ -65,6 +65,7 @@ accessToken:00D3h000007R1Lu!AR0AQJVVkhIy2Blockedsv.m0CGmoXsX9ctgUw4o6zFS5JORWE5o
 
 ```
 
+### Getting the CSV file via CURL
 ```
 $ curl -X GET    https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v48.0/sobjects/DatasetExportPart/0Py3h0000004DlHCAU/DataFile  -H 'Authorization: Bearer 00D3h000007R1Lu!AR0AQJVVkhIy2BLOCKEDsv.m0CGmoXsX9ctgUw4o6zFS5JORWE5oeyQUUE5xRUHFt3RSjDSZ2O4SheisV1rQdjswwZgVtCZ_V32qeB'
 
@@ -84,3 +85,11 @@ $ curl -X GET    https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v
 
 
 ```
+
+## Notes - Future work
+- All these DX separate operations will be made available by this command in future
+
+``` sfdx mohanc:ea:dataset:export -e  0Px3h0000004D6ECAU
+
+```
+- Above command will emit the csv files part by part
