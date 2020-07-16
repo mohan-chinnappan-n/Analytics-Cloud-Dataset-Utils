@@ -89,3 +89,149 @@ sfdx mohanc:ea:dataset:export -e  0Px3h0000004D6ECAU
 
 ```
 - Above command will emit the csv files part by part
+
+### How to query list of dataflows using dx
+
+```
+$ sfdx mohanc:ea:query  -u mohan.chinnappan.n_ea2@gmail.com -r dataflows
+```
+
+```json
+{
+  "dataflows": [
+    {
+      "createdBy": {
+        "id": "0053h000002xQ5sAAE",
+        "name": "Mohan Chinnappan",
+        "profilePhotoUrl": "/img/userprofile/default_profile_45_v2.png"
+      },
+      "createdDate": "2020-07-15T21:31:52.000Z",
+      "description": "exportOppty2",
+      "emailNotificationLevel": "warnings",
+      "historiesUrl": "/services/data/v48.0/wave/dataflows/02K3h000000Mu1oEAC/histories",
+      "id": "02K3h000000Mu1oEAC",
+      "label": "exportOppty2",
+      "lastModifiedBy": {
+        "id": "0053h000002xQ5sAAE",
+        "name": "Mohan Chinnappan",
+        "profilePhotoUrl": "/img/userprofile/default_profile_45_v2.png"
+      },
+      "lastModifiedDate": "2020-07-15T21:33:27.000Z",
+      "name": "exportOppty2",
+      "type": "dataflow",
+      "url": "/services/data/v48.0/wave/dataflows/02K3h000000Mu1oEAC"
+    },
+    {
+      "createdBy": {
+        "id": "0053h000002xQ5sAAE",
+        "name": "Mohan Chinnappan",
+        "profilePhotoUrl": "/img/userprofile/default_profile_45_v2.png"
+      },
+      "createdDate": "2020-07-15T20:55:04.000Z",
+      "description": "exportOppty",
+      "emailNotificationLevel": "warnings",
+      "historiesUrl": "/services/data/v48.0/wave/dataflows/02K3h000000Mu0vEAC/histories",
+      "id": "02K3h000000Mu0vEAC",
+      "label": "exportOppty",
+      "lastModifiedBy": {
+        "id": "0053h000002xQ5sAAE",
+        "name": "Mohan Chinnappan",
+        "profilePhotoUrl": "/img/userprofile/default_profile_45_v2.png"
+      },
+      "lastModifiedDate": "2020-07-15T20:56:08.000Z",
+      "name": "exportOppty",
+      "type": "dataflow",
+      "url": "/services/data/v48.0/wave/dataflows/02K3h000000Mu0vEAC"
+    },
+    {
+      "createdBy": {
+        "id": "0053h000002xQ5sAAE",
+        "name": "Mohan Chinnappan",
+        "profilePhotoUrl": "/img/userprofile/default_profile_45_v2.png"
+      },
+      "createdDate": "2020-07-15T18:33:46.000Z",
+      "description": "ExportCustomers",
+      "emailNotificationLevel": "warnings",
+      "historiesUrl": "/services/data/v48.0/wave/dataflows/02K3h000000MtyuEAC/histories",
+      "id": "02K3h000000MtyuEAC",
+      "label": "ExportCustomers",
+      "lastModifiedBy": {
+        "id": "0053h000002xQ5sAAE",
+        "name": "Mohan Chinnappan",
+        "profilePhotoUrl": "/img/userprofile/default_profile_45_v2.png"
+      },
+      "lastModifiedDate": "2020-07-15T18:33:46.000Z",
+      "name": "ExportCustomers",
+      "type": "dataflow",
+      "url": "/services/data/v48.0/wave/dataflows/02K3h000000MtyuEAC"
+    },
+    {
+      "createdBy": {
+        "id": "0053h000002xQ5sAAE",
+        "name": "Mohan Chinnappan",
+        "profilePhotoUrl": "/img/userprofile/default_profile_45_v2.png"
+      },
+      "createdDate": "2020-07-14T10:54:45.000Z",
+      "description": "fruitsdf",
+      "emailNotificationLevel": "warnings",
+      "historiesUrl": "/services/data/v48.0/wave/dataflows/02K3h000000MrxWEAS/histories",
+      "id": "02K3h000000MrxWEAS",
+      "label": "fruitsdf",
+      "lastModifiedBy": {
+        "id": "0053h000002xQ5sAAE",
+        "name": "Mohan Chinnappan",
+        "profilePhotoUrl": "/img/userprofile/default_profile_45_v2.png"
+      },
+      "lastModifiedDate": "2020-07-14T11:00:13.000Z",
+      "name": "fruitsdf",
+      "type": "dataflow",
+      "url": "/services/data/v48.0/wave/dataflows/02K3h000000MrxWEAS"
+    },
+    {
+      "createdBy": {
+        "id": "0053h000002xQ5sAAE",
+        "name": "Mohan Chinnappan",
+        "profilePhotoUrl": "/img/userprofile/default_profile_45_v2.png"
+      },
+      "createdDate": "2020-07-13T19:30:57.000Z",
+      "description": "The_Motivator",
+      "emailNotificationLevel": "warnings",
+      "historiesUrl": "/services/data/v48.0/wave/dataflows/02K3h000000Mr7JEAS/histories",
+      "id": "02K3h000000Mr7JEAS",
+      "label": "The_Motivator",
+      "lastModifiedBy": {
+        "id": "0053h000002xQ5sAAE",
+        "name": "Mohan Chinnappan",
+        "profilePhotoUrl": "/img/userprofile/default_profile_45_v2.png"
+      },
+      "lastModifiedDate": "2020-07-13T19:30:57.000Z",
+      "name": "The_Motivator",
+      "type": "dataflow",
+      "url": "/services/data/v48.0/wave/dataflows/02K3h000000Mr7JEAS"
+    },
+    {
+      "createdBy": {
+        "id": "0053h000003de6bAAA",
+        "name": "Integration User",
+        "profilePhotoUrl": "/img/userprofile/default_profile_45_v2.png"
+      },
+      "createdDate": "2020-07-13T19:30:57.000Z",
+      "description": "This is the default Salesforce dataflow.",
+      "emailNotificationLevel": "failures",
+      "historiesUrl": "/services/data/v48.0/wave/dataflows/02K3h000000Mr7KEAS/histories",
+      "id": "02K3h000000Mr7KEAS",
+      "label": "Default Salesforce Dataflow",
+      "lastModifiedBy": {
+        "id": "0053h000003de6bAAA",
+        "name": "Integration User",
+        "profilePhotoUrl": "/img/userprofile/default_profile_45_v2.png"
+      },
+      "lastModifiedDate": "2020-07-13T19:30:57.000Z",
+      "name": "SalesEdgeEltWorkflow",
+      "type": "dataflow",
+      "url": "/services/data/v48.0/wave/dataflows/02K3h000000Mr7KEAS"
+    }
+  ]
+}
+```
+
