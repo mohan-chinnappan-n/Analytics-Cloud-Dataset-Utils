@@ -36,7 +36,7 @@
 ```
 
 
-<a href='#singlecmd'>Single Command Option</a>
+<a name='#singlecmd'>Single Command Option</a>
 
 ### DX query to get DatasetExport Id, DatasetExportPart Id, Access Token
 
