@@ -85,10 +85,14 @@ $ curl -X GET    https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v
 
 ```
 <a name='singlecmd'></a>
-## Single command to export a Dataset into CSV? 
+## Single command to export a Dataset into CSV 
 
 - Run this after your dataflow run is completed
 - This will fetch the latest run to get the csv file
+- Requires 0.0.44 version of the plugin
+    - sfdx-mohanc-plugins@0.0.44
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
 ```
 $ sfdx mohanc:ea:dataset:export  -h
 Dataset Exporter  
