@@ -47,7 +47,7 @@ CREATEDBYID         CREATEDDATE                   ID                  LASTMODIFI
 0053h000003de6bAAA  2020-07-15T20:57:06.000+0000  0Px3h0000004D64CAE  0053h000003de6bAAA  2020-07-15T20:57:17.000+0000  0053h000002xQ5sAAE  Completed
 Total number of records retrieved: 2.
 
-### let us the latest one
+### let us get the part details for  the latest DatasetExportPart 
 $ sfdx force:data:soql:query -u mohan.chinnappan.n_ea2@gmail.com -q " SELECT Id,PartNumber, DataFileLength,DatasetExportId FROM DatasetExportPart WHERE DatasetExportId='0Px3h0000004D6ECAU'"
 ID                  PARTNUMBER  DATAFILELENGTH  DATASETEXPORTID
 ──────────────────  ──────────  ──────────────  ──────────────────
