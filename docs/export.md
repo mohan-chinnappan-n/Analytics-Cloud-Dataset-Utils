@@ -1,4 +1,3 @@
-
 ## Export data via Export transformation
 
 ### Permissions required
@@ -8,6 +7,7 @@
 
 
 ### Export via edgeMart  Dataflow
+- Run the following Dataflow 
 ``` json 
 
 {
@@ -32,6 +32,7 @@
 
 
 ```
+
 
 
 ### DX query to get DatasetExport Id, DatasetExportPart Id, Access Token
