@@ -83,15 +83,49 @@ $ curl -X GET    https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v
 
 ```
 
-## Notes - Future work
-- All these DX separate operations will be made available by this command in future
-
-``` 
-sfdx mohanc:ea:dataset:export -e  0Px3h0000004D6ECAU
+## How about one Single command to export into CSV? 
 
 ```
-- Above command will emit the csv files part by part
+$ sfdx mohanc:ea:dataset:export  -h
+Dataset Exporter  
 
+USAGE
+  $ sfdx mohanc:ea:dataset:export
+
+OPTIONS
+  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
+  --apiversion=apiversion                         override the api version used for api requests made by this command
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+              exports the lastest run datasetExport into a csv file
+
+```
+
+### Demo
+```
+$ sfdx mohanc:ea:dataset:export  -u mohan.chinnappan.n_ea2@gmail.com
+name,dob,seq,amt1,amt2
+"8945 Mrs. Pam Cordova","2003-05-15",71,19408,2120
+"897 Larry Foster","1937-06-08",71,85612,8351
+"2943 Nancy Chung","1915-07-20",71,18120,3658
+"9817 Jeffrey Shields","1943-12-30",71,93725,3520
+"176 Kimberly Lawson","1970-08-30",71,40014,7528
+"1842 Joseph Simmons","1956-01-21",71,86296,5866
+"286 Shane Bradley","1905-12-12",71,19681,4316
+"6419 Brittany Dyer","1954-10-04",71,95849,422
+"1167 Kelsey Haas","1916-04-26",71,11745,8665
+....
+```
+
+![dx-dataset-export](img/ea-dataset-export-dx.gif)
+
+
+
+
+## Extra info
 ### How to query list of dataflows using dx
 
 ```
