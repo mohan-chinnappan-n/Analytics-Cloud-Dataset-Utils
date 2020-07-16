@@ -234,4 +234,53 @@ $ sfdx mohanc:ea:query  -u mohan.chinnappan.n_ea2@gmail.com -r dataflows
   ]
 }
 ```
+### Usage info for ea:query
 
+
+```
+$ sfdx mohanc:ea:query  -h
+Query a EA
+
+USAGE
+  $ sfdx mohanc:ea:query
+
+OPTIONS
+  -l, --loginfilename=loginfilename                Name of file containing login credentials
+  -o, --orgname=orgname                            Org name in the Login File
+
+  -r, --resource=resource                          EA resource : 
+                                                   dashboards|dataConnectors|dataConnectorsTypes|dataflowJobs|datasets|folders|lense
+                                                   s|recipes|templates|trendedreports
+
+  -u, --targetusername=targetusername              username or alias for the target org; overrides default target org
+
+  -v, --targetdevhubusername=targetdevhubusername  username or alias for the dev hub org; overrides default dev hub org
+
+  --apiversion=apiversion                          override the api version used for api requests made by this command
+
+  --json                                           format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal)   logging level for this command invocation
+
+EXAMPLE
+ 
+         sfdx force:auth:web:login -r https://login.salesforce.com
+         $ sfdx force:org:list
+         === Orgs
+        ALIAS     USERNAME                            ORG ID              CONNECTED STATUS
+                  mohan.chinnappan.n_ea@gmail.com     00D1N000001Tjk2UAC  Connected
+
+         sfdx mohanc:ea:query  -u  mohan.chinnappan.n_ea@gmail.com    -r dashboards > dashboards.json
+
+         resources:
+         1. dashboards
+         2. dataConnectorTypes
+         3. dataConnectors
+         4. dataflowjobs
+         5. folders
+         6. lenses
+         7. query
+         8. recipes
+         9. templates
+         10. trendedreports
+```
