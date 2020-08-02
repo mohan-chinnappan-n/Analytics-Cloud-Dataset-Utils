@@ -47,7 +47,7 @@
 
 <a name="curl"></a>
 
-## Using CURL
+## Using cURL 
 ### DX query to get DatasetExport Id, DatasetExportPart Id, Access Token
 
 ```
@@ -75,7 +75,7 @@ accessToken:00D3h000007R1Lu!AR0AQJVVkhIy2Blockedsv.m0CGmoXsX9ctgUw4o6zFS5JORWE5o
 ```
 
 
-### Getting the CSV file for the partnumber 1 via CURL
+### Getting the CSV file for the partnumber 1 via cURL
 ```
 $ curl -X GET    https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v48.0/sobjects/DatasetExportPart/0Py3h0000004DlHCAU/DataFile  -H 'Authorization: Bearer 00D3h000007R1Lu!AR0AQJVVkhIy2BLOCKEDsv.m0CGmoXsX9ctgUw4o6zFS5JORWE5oeyQUUE5xRUHFt3RSjDSZ2O4SheisV1rQdjswwZgVtCZ_V32qeB'
 
@@ -97,7 +97,7 @@ $ curl -X GET    https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v
 ```
 
 <a name="list"></a>
-## List Completed Dataset Export Ids>
+## List Completed Dataset Export Ids
 
 - Run this after your dataflow run is completed
 - Requires 0.0.45 version of the plugin
