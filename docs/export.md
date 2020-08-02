@@ -1,12 +1,22 @@
 ## Export data via Export transformation
 
+### Topics
+- [Permissions Required](#perms)
+- [Sample Dataflow](#df)
+- [Using cURL](#curl)
+- [List Completed Dataset Exports](#list)
+- [Single Command Option for expor](#singlecmd)
+- [Listing dataflows](#listdf)
 
+
+<a name="perms"></a>
 ### Permissions required
 
 ![ps-1](img/export-user-ps-1.png)
 ![ps-2](img/export-user-ps-2.png)
 
 
+<a name="df"></a>
 ### Export via edgeMart  Dataflow
 - Run the following Dataflow 
 
@@ -35,8 +45,9 @@
 
 ```
 
+<a name="curl"></a>
 
-
+## Using CURL
 ### DX query to get DatasetExport Id, DatasetExportPart Id, Access Token
 
 ```
@@ -84,7 +95,9 @@ $ curl -X GET    https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v
 
 
 ```
-<a href='#list'>List Completed Dataset Export Ids</a>
+
+<a name="list"></a>
+## List Completed Dataset Export Ids>
 
 - Run this after your dataflow run is completed
 - Requires 0.0.45 version of the plugin
@@ -120,7 +133,7 @@ List of Completed DatasetExport Ids:
 ```
 <hr>
 
-<a href='#singlecmd'>Single Command Option</a>
+<a name='singlecmd'></a>
 ## Single command to export a Dataset into CSV 
 
 - Run this after your dataflow run is completed
@@ -177,7 +190,7 @@ name,dob,seq,amt1,amt2
 
 
 
-
+<a name="listdf"></>
 ## Extra info
 ### How to query list of dataflows using dx
 
