@@ -36,7 +36,6 @@
 ```
 
 
-<a href='#singlecmd'>Single Command Option</a>
 
 ### DX query to get DatasetExport Id, DatasetExportPart Id, Access Token
 
@@ -64,6 +63,7 @@ accessToken:00D3h000007R1Lu!AR0AQJVVkhIy2Blockedsv.m0CGmoXsX9ctgUw4o6zFS5JORWE5o
 
 ```
 
+
 ### Getting the CSV file for the partnumber 1 via CURL
 ```
 $ curl -X GET    https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v48.0/sobjects/DatasetExportPart/0Py3h0000004DlHCAU/DataFile  -H 'Authorization: Bearer 00D3h000007R1Lu!AR0AQJVVkhIy2BLOCKEDsv.m0CGmoXsX9ctgUw4o6zFS5JORWE5oeyQUUE5xRUHFt3RSjDSZ2O4SheisV1rQdjswwZgVtCZ_V32qeB'
@@ -84,13 +84,49 @@ $ curl -X GET    https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v
 
 
 ```
-<a name='singlecmd'></a>
+<a href='#list'>List Completed Dataset Export Ids</a>
+
+- Run this after your dataflow run is completed
+- Requires 0.0.45 version of the plugin
+    - sfdx-mohanc-plugins@0.0.45
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
+```
+Lists Completed Dataset Exports  
+
+USAGE
+  $ sfdx mohanc:ea:dataset:exportList
+
+OPTIONS
+  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
+  --apiversion=apiversion                         override the api version used for api requests made by this command
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+              Lists the completed Dataset Exports
+              sfdx mohanc:ea:dataset:list  -u <username> 
+```
+
+### Demo
+```
+ sfdx mohanc:ea:dataset:exportList  -u mohan.chinnappan.n_ea2@gmail.com
+
+List of Completed DatasetExport Ids:
+------------------------------------
+            
+0Px3h0000004DSKCA2
+```
+<hr>
+
+<a href='#singlecmd'>Single Command Option</a>
 ## Single command to export a Dataset into CSV 
 
 - Run this after your dataflow run is completed
 - This will fetch the latest run to get the csv file
-- Requires 0.0.44 version of the plugin
-    - sfdx-mohanc-plugins@0.0.44
+- Requires 0.0.45 version of the plugin
+    - sfdx-mohanc-plugins@0.0.45
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 ```
@@ -101,6 +137,7 @@ USAGE
   $ sfdx mohanc:ea:dataset:export
 
 OPTIONS
+  -e, --exportid=exportid                         Export Id to be exported or LATEST
   -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
   --apiversion=apiversion                         override the api version used for api requests made by this command
   --json                                          format output as json
@@ -108,7 +145,15 @@ OPTIONS
 
 EXAMPLE
 
-              exports the lastest run datasetExport into a csv file
+              exports the latest run (or given exportId) datasetExport into a csv file
+
+              sfdx mohanc:ea:dataset:export  -u <username> -e [exportId]
+
+              if -e flag is not provided, latest exportId will be used for the export
+
+              sfdx mohanc:ea:dataset:export  -u <username> -e 0Px3h0000004DSKCA2 > customers.csv
+               OR
+              sfdx mohanc:ea:dataset:export  -u mohan.chinnappan.n_ea2@gmail.com > customers.csv
 
 ```
 
