@@ -5,7 +5,7 @@
 - [Sample Dataflow](#df)
 - [Using cURL](#curl)
 - [List Completed Dataset Exports](#list)
-- [Single Command Option for expor](#singlecmd)
+- [Single Command Option for export](#singlecmd)
 - [Listing dataflows](#listdf)
 
 
