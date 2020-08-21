@@ -5,7 +5,7 @@
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 ### Topics
-- [List Dataflow in the org](#listdf)
+- [List Dataflows in the org](#listdf)
 - [Start a Dataflow ](#startDf)
 - [List Dataflow Jobs](#listdfj)
 - [Stop a Dataflow Job](#stopDfJob)
