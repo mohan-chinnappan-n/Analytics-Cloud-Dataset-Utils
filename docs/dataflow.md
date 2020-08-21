@@ -1,5 +1,9 @@
 # Dataflow Utils
 
+- Requires 0.0.49 version of the plugin
+    - sfdx-mohanc-plugins@0.0.49
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
 ### Topics
 - [List Dataflow in the orgd](#listdf)
 - [Start a Dataflow ](#startDf)
