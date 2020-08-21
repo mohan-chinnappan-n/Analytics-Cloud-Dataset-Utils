@@ -1,5 +1,14 @@
 # Dataflow Utils
 
+### Topics
+- [List Dataflow in the orgd](#listdf)
+- [Start a Dataflow ](#startDf)
+- [List Dataflow Jobs](#listdfj)
+- [Stop a Dataflow Job](#stopDfJob)
+
+
+
+<a name="listdf"></a>
 ## List Dataflows in the org 
 
 ### Usage 
@@ -36,7 +45,8 @@ Id,Label
 
 ```
 
-## Start a Dataflow Job
+<a name="startDf"></a>
+## Start a Dataflow 
 
 ### Usage
 ```
@@ -66,7 +76,7 @@ Dataflow Job Id: 02K3h000000Mu1oEAC
 { progress: 0, status: 'Queued', type: 'dataflowjob' }
 
 ```
-
+<a name="listdfj"></a>
 ## List Dataflow jobs
 
 ### Usage
@@ -107,6 +117,8 @@ Id,Label,Status,executedDate
 03C3h000002Ea8REAS,exportOppty2,Success,2020-08-18T18:00:37.000Z
 ```
 
+
+<a name="stopDfJob"></a>
 ## Stop a dataflow job
 ### Usage
 
